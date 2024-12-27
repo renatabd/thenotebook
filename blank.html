@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The notebook</title>
+    <link rel="stylesheet" href="css/blank.css">
+</head>
+<body>
+    <div class="frame1"> <div class="container">
+        <h1>The notebook</h1>
+        <p>Configuration:</p>
+        <label for="backgroundSelector" class="label">Background:</label>
+        <select id="backgroundSelector">
+            <option value="url('images/bFaeelw.jpeg')">Light 1</option>
+            <option value="url('images/CkcvFWb.gif')">Light 2</option>
+            <option value="url('images/cwy85wa.png')">Light 3</option>
+            <option value="url('images/fLj49Zk.jpeg')">Light 4</option>
+            <option value="url('images/tumblr_lzxkhw34cK1r9g6hvo3_100.png')">Dark 5</option>
+            <option value="url('images/tkJVjcb.gif')">Light 6</option>
+            <option value="url('images/yhEJtrZ.gif')">Light 7</option>
+        </select>
+    </div>
+    <div class="controls">
+        <button class="font-btn" onclick="changeFontSize('decrease')">↓ font size</button>
+        <button class="font-btn" onclick="changeFontSize('increase')">↑ font size</button>
+    </div>
+    <div class="controls">
+        <label for="fontSelector" class="label">Choose a font: </label>
+        <select id="fontSelector" onchange="changeFontFamily()">
+            <option value="Handwrite">Handwrite</option>
+            <option value="OldTypewriter">Old Typewriter</option>
+            <option value="Typewriter">Typewriter</option>
+            <option value="RainyHearts">RainyHearts</option>
+            <option value="Pixel">Pixel</option>
+        </select>
+    </div>
+    <hr>
+        <!--SITE NAVIGATION BAR-->
+<p>Site Navigation</p>
+<div class="dropdown-menu">
+    <ul>
+        <li class="dropdown">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="dropdown">
+            <a href="#">About</a>
+            <ul class="submenu">
+                <li><a href="about.html">Me</a></li>
+                <li><a href="website.html">Website</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Resources</a>
+            <ul class="submenu">
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Graphics</a></li>
+                <li><a href="linedpaper.html">Lined Paper</a></li>
+                <li><a href="squared.html">Grid Paper</a></li>
+                <li><a href="blank.html">Blank Paper</a></li>
+                <li><a href="dotted.html">Dotted Paper</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="https://renata.atabook.org/" target="_blank">Guestbook</a>
+        </li>
+    </ul>
+</div>
+    <!--SITE NAVIGATION BAR-->
+    <hr>
+    <img src="images/butterflyangel.gif" title="Credit: https://gifcities.org/">
+</div>
+    <div class="frame2">
+        <div class="lined-paper" id="lined-paper">
+            <b>Lorem ipsum dolor sit amet</b>
+            <br>
+            Example of <b>bold</b><br>
+            Example of <a href="#">link</a><br>
+            Example of <u>underline</u><br>
+            Example of <i>italic</i><br>
+            Example of <mark>highlighted 1</mark><br>
+            Example of <mark class="mark2">highlighted 2</mark><br>
+            Example of <mark class="mark3">highlighted 3</mark><br>
+            <b>Ps: It's not recommended to put images here! It can break the lines</b> <br>
+            <br>
+            Example of an unordered list with pink buttons:
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            <br>
+            Example of an ordered list with bold numbers:
+                <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+                <br>
+        </div>
+    </div>
+    <script src="js/background.js"></script>
+    <script src="js/fontsize.js"></script>
+    <script src="js/fonttype.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

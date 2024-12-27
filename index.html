@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The notebook</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="frame1">
+        <div class="container">
+            <h1>The notebook</h1>
+            <p>Configuration:</p>
+            <label for="backgroundSelector" class="label">Background:</label>
+            <select id="backgroundSelector">
+                <option value="url('images/bFaeelw.jpeg')">Light 1</option>
+                <option value="url('images/CkcvFWb.gif')">Light 2</option>
+                <option value="url('images/cwy85wa.png')">Light 3</option>
+                <option value="url('images/fLj49Zk.jpeg')">Light 4</option>
+                <option value="url('images/tumblr_lzxkhw34cK1r9g6hvo3_100.png')">Dark 5</option>
+                <option value="url('images/tkJVjcb.gif')">Light 6</option>
+                <option value="url('images/yhEJtrZ.gif')">Light 7</option>
+            </select>
+        </div>
+        <div class="controls">
+            <button class="font-btn" onclick="changeFontSize('decrease')">↓ font size</button>
+            <button class="font-btn" onclick="changeFontSize('increase')">↑ font size</button>
+        </div>
+        <div class="controls">
+            <label for="fontSelector" class="label">Choose a font: </label>
+            <select id="fontSelector" onchange="changeFontFamily()">
+                <option value="Handwrite">Handwrite</option>
+                <option value="OldTypewriter">Old Typewriter</option>
+                <option value="Typewriter">Typewriter</option>
+                <option value="RainyHearts">RainyHearts</option>
+                <option value="Pixel">Pixel</option>
+            </select>
+        </div>
+        <hr>
+        <!--SITE NAVIGATION BAR-->
+        <p>Site Navigation</p>
+        <div class="dropdown-menu">
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <ul class="submenu">
+                        <li><a href="about.html">Me</a></li>
+                        <li><a href="website.html">Website</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Resources</a>
+                    <ul class="submenu">
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Graphics</a></li>
+                        <li><a href="linedpaper.html">Lined Paper</a></li>
+                        <li><a href="squared.html">Grid Paper</a></li>
+                        <li><a href="blank.html">Blank Paper</a></li>
+                        <li><a href="dotted.html">Dotted Paper</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="https://renata.atabook.org/" target="_blank">Guestbook</a>
+                </li>
+            </ul>
+        </div>
+        <!--SITE NAVIGATION BAR-->
+        <hr>
+        <img src="images/butterflyangel.gif" title="Credit: https://gifcities.org/">
+    </div>
+    <div class="frame2">
+        <div class="lined-paper" id="lined-paper">
+            <h1>This is the notebook</h1>
+            In this theme, you will find four different types of pages. Access them under Resources. This theme is
+            highly customizable. Check the options in the sidebar.
+            <hr class="new2">
+            <h1>Lorem ipsum</h1>
+            12 2 2024
+            <hr class="new2">
+            <h1>This is H1</h1>
+            Date: <b>bold words</b>
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec pretium turpis. Praesent in purus neque.
+            Proin venenatis est vel ligula molestie, nec imperdiet eros laoreet. Donec vestibulum malesuada enim, quis
+            tristique mauris malesuada dapibus. Aliquam accumsan, dui eu gravida fermentum, diam sem ornare eros, et
+            feugiat dui ligula eget purus. Nulla malesuada imperdiet massa, eget fringilla dui lobortis vitae. Donec
+            nisi ex, elementum eget finibus eget, cursus ut erat. Donec facilisis nulla ac justo consequat, id luctus
+            augue tincidunt. Maecenas tristique dui sit amet commodo dapibus. Vestibulum posuere in dui sit amet rutrum.
+            Donec vehicula malesuada arcu, nec imperdiet orci consequat pharetra.
+            <br>
+            <br>
+            This is an image:
+            <img src="/images/newlayout.png" width="70%" class="center">
+            <br>
+            <br>
+            <hr class="new1">
+        </div>
+    </div>
+
+    <script src="js/background.js"></script>
+    <script src="js/fontsize.js"></script>
+    <script src="js/fonttype.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
